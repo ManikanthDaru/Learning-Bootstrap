@@ -58,7 +58,8 @@
                 <div>
                     <h1>Building a <span class="text-success">Better Web</span>, Together</h1>
                     <p class="lead my-4">Join our community of learners and access a wealth of resources to help you master web development.</p>
-                    <button class="btn btn-primary btn-lg">
+                    <button class="btn btn-primary btn-lg" data-bs-toggle="modal"
+                    data-bs-target="#enroll">
                         Get Started
                     </button>
                 </div>
@@ -262,6 +263,104 @@
           </div>
         </div>
       </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <!-- Contact Info -->
+      <section class="p-5">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-md">
+              <h2 class="text-center mb-4">Contact Info</h2>
+              <ul class="list-group list-group-flush lead">
+                <li class="list-group-item">
+                  <span class="fw-bold">Main Location:</span> Hyderabad,India
+                </li>
+                <li class="list-group-item">
+                  <span class="fw-bold">My Email:</span>
+                  manikanthdaru82@gmail.com
+                </li>
+                <li class="list-group-item">
+                    <span class="fw-bold">Linkedin:</span>
+                    <a href="https://www.linkedin.com/in/manikanth-daru-593ab426a" target="_blank">Manikanth Daru</a>
+                </li>
+                <li class="list-group-item">
+                    <span class="fw-bold">GitHub:</span>
+                    <a href="https://github.com/ManikanthDaru" target="_blank">Manikanth Daru</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md">
+              <div id="map"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+          <p class="lead">Copyright &copy; 2021 Frontend Bootcamp</p>
+          <a href="#" class="position-absolute bottom-0 end-0 p-5">
+            <i class="bi bi-arrow-up-circle h1"></i>
+          </a>
+        </div>
+      </footer>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="enroll"
+        tabindex="-1"
+        aria-labelledby="enrollLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="enrollLabel">Enrollment</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p class="lead">Fill out this form and we will get back to you</p>
+              <form>
+                <div class="mb-3">
+                  <label for="first-name" class="col-form-label">
+                    First Name:
+                  </label>
+                  <input type="text" class="form-control" id="first-name" />
+                </div>
+                <div class="mb-3">
+                  <label for="last-name" class="col-form-label">Last Name:</label>
+                  <input type="text" class="form-control" id="last-name" />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="col-form-label">Email:</label>
+                  <input type="email" class="form-control" id="email" />
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="col-form-label">Phone:</label>
+                  <input type="tel" class="form-control" id="phone" />
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
